@@ -57,7 +57,7 @@ end
 
 for i = 1 : length(cluster_table_x)
 figure;
-plot(cluster_table_x{length(cluster_table_x) - i + 1}, cluster_table_y{length(cluster_table_x) - i + 1}, '+');
+plot(cluster_table_x{i}, cluster_table_y{i}, '+');
 axis([0 12 0 9]);
 saveas(gcf, strcat('cluster_table', int2str(i)), 'bmp');
 end
